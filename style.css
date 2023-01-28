@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: #D9D9D9;
+}
+
+main {
+    height: 1950px;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    filter: grayscale(1);
+    transition: 0.6s;
+}
+
+img:hover {
+    filter: grayscale(0);
+}
+
+header {
+    padding: 20px;
+    background-color: #262F4D;
+    height: 50px;
+    overflow: hidden;
+}
+
+header h1 {
+    color: #DCE4F5;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+header ul li{
+    position: relative;
+    top: -50px;
+    font-size: 25px;
+    margin: 10px;
+    list-style: none;
+}
+
+header ul li a {
+    color: #DCE4F5;
+    text-decoration: none;
+    border: none;
+    background: none;
+    transition: 0.6s;
+}
+
+header ul li a:hover {
+    color: #8d939e;
+}
+
+header ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #8d939e;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+header ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+main {
+    color: #3D414D;
+}
+
+h2 {
+    font-size: 100px;
+    font-weight: 100;
+    position: relative;
+    left: 50px;
+    text-decoration: underline;
+}
+
+#AboutMe {
+    height: 280px;
+    overflow: hidden;
+}
+
+#AboutMe h3 {
+    position: relative;
+    left: 50px;
+    margin-top: 15px;
+    font-size: 48px;
+    font-weight: 100;
+}
+
+#AboutMe p {
+    position: relative;
+    margin-top: 15px;
+    left: 125px;
+    top: -178px;
+    width: 80%;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+#AboutMe span {
+    position: relative;
+    display: block;
+    width: 5px;
+    left: 110px;
+    height: 180px;
+    background-color: #3D414D;
+    color: #3D414D;
+}
+
+#Projects {
+    background-color: #A7B5D1;
+    padding-bottom: 25px;
+}
+
+#Projects img {
+    height: 300px;
+    border-radius: 10px;
+}
+
+#Projects h3 {
+    position: relative;
+    left: 50px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.Outer {
+    background-color: #D9D9D9;
+    margin: 20px;
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+}
+
+#Projects div h4 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 200;
+    text-align: center;
+    left: 380px;
+    width: 500px;
+}
+
+#Projects div p {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    top: 20px;
+}
+
+#Projects button {
+    position: relative;
+    top: 55%;
+    left: 75%;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    margin-right: 10px;
+    background-color: #3D414D;
+    color: #DCE4F5;
+    transition: 0.4s;
+    box-shadow: #31322d -5px 5px 10px;
+    cursor: pointer;
+}
+
+#Projects button:hover {
+    background-color: #262F4D;
+    box-shadow: none;
+}
+
+#Skills {
+    margin: 50px 0;
+    background-color: #A7B5D1;
+    padding: 20px 50px;
+}
+
+#Skills h3 {
+    font-size: 48px;
+}
+
+#Skills img {
+    position: relative;
+    left: 50px;
+    height: 50px;
+}
+
+footer {
+    padding: 15px;
+    color: #DCE4F5;
+    font-size: 20px;
+    background-color: #262F4D;
+}
+
+@media (max-width: 1548px) {
+    #AboutMe span {
+        height: 200px;
+    }
+
+    #AboutMe p {
+        top: -210px;
+    }
+
+    #AboutMe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 1258px) {
+    #AboutMe span {
+        height: 240px;
+    }
+
+    #AboutMe p {
+        top: -245px;
+    }
+
+    #AboutMe {
+        height: 370px;
+    }
+}
+
+@media (max-width: 1060px) {
+    #AboutMe span {
+        height: 280px;
+    }
+
+    #AboutMe p {
+        top: -285px;
+    }
+
+    #AboutMe {
+        height: 400px;
+    }
+}
+
+@media (max-width: 869px) {
+    #AboutMe span {
+        height: 320px;
+    }
+
+    #AboutMe p {
+        top: -325px;
+    }
+
+    #AboutMe {
+        height: 440px;
+    }
+}
