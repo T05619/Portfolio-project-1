@@ -95,11 +95,6 @@ h2 {
     text-decoration: underline;
 }
 
-#AboutMe {
-    height: 280px;
-    overflow: hidden;
-}
-
 #AboutMe h3 {
     position: relative;
     left: 50px;
@@ -111,8 +106,6 @@ h2 {
 #AboutMe p {
     position: relative;
     margin-top: 15px;
-    left: 125px;
-    top: -178px;
     width: 80%;
     font-size: 32px;
     font-weight: 100;
@@ -121,11 +114,11 @@ h2 {
 #AboutMe span {
     position: relative;
     display: block;
-    width: 5px;
+    width: 100%;
     left: 110px;
-    height: 180px;
-    background-color: #3D414D;
+    height: 100%;
     color: #3D414D;
+    margin-bottom: 40px;
 }
 
 #Projects {
@@ -151,7 +144,7 @@ h2 {
     background-color: #D9D9D9;
     margin: 20px;
     border-radius: 25px;
-    padding: 30px;
+    padding: 2%;
     display: flex;
 }
 
@@ -168,7 +161,7 @@ h2 {
     position: relative;
     text-align: center;
     font-size: 30px;
-    top: 20px;
+    top: 2%;
 }
 
 #Projects button {
@@ -215,58 +208,15 @@ footer {
     background-color: #262F4D;
 }
 
-@media (max-width: 1548px) {
+@media (max-width: 350px) {
+    h2 {
+        left: 20px;
+    }
+
+    #AboutMe h3 {
+        left: 20px;
+    }
     #AboutMe span {
-        height: 200px;
-    }
-
-    #AboutMe p {
-        top: -210px;
-    }
-
-    #AboutMe {
-        height: 300px;
-    }
-}
-
-@media (max-width: 1258px) {
-    #AboutMe span {
-        height: 240px;
-    }
-
-    #AboutMe p {
-        top: -245px;
-    }
-
-    #AboutMe {
-        height: 370px;
-    }
-}
-
-@media (max-width: 1060px) {
-    #AboutMe span {
-        height: 280px;
-    }
-
-    #AboutMe p {
-        top: -285px;
-    }
-
-    #AboutMe {
-        height: 400px;
-    }
-}
-
-@media (max-width: 869px) {
-    #AboutMe span {
-        height: 320px;
-    }
-
-    #AboutMe p {
-        top: -325px;
-    }
-
-    #AboutMe {
-        height: 440px;
+        left: 20px;
     }
 }
